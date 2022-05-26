@@ -1,48 +1,146 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="style.css" rel="stylesheet">
 <title> 
-    Exercicios - Lista 01
+    Exercícios de Lógica
 </title> 
 <meta charset="utf-8">
 </head> 
 <body> 
 
-    <h2>Exercicio 1</h1>
-    <h4>Faça um algoritmo que leia dois valores e, em seguida, calcule e escreva a soma, a subtração, a divisão e o produto entre esses dois valores.</h4>
-    <input type="text" id="num1"/>
-    <input type="text" id="num2"/>
-    <button onclick="soma()">Calcule</button>
-    <span id="somaResult"></span>
-    <br><br><br>
+    <div class="container">
+        <div class="child">
+            
+    <table>
+        <tbody>
 
-    <h2>Exercicio 2</h2>
-    <h4>Faça um algoritmo que leia três valores, determine e escreva a média aritmética entre eles.</h4>
-    <input type="text" id="num3"/>
-    <input type="text" id="num4"/>
-    <input type="text" id="num5"/>
-    <button onclick="media()">Calcule</button>
-    <span id="mediaResult"></span>
-    <br><br><br>
+        <tr>
+            <td>
+                <h1>Exercícios de Fixação - Aritmética</h1>
+                <h2>Exercício 1</h1>
+                <h4>Faça um algoritmo que leia dois valores e, em seguida, calcule e escreva a soma, a subtração, a divisão e o produto entre esses dois valores.</h4>
+                <input type="text" id="num1"/>
+                <input type="text" id="num2"/>
+                <button onclick="soma()">Calcule</button>
+                <span id="somaResult"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Exercício 2</h2>
+                <h4>Faça um algoritmo que leia três valores, determine e escreva a média aritmética entre eles.</h4>
+                <input type="text" id="num3"/>
+                <input type="text" id="num4"/>
+                <input type="text" id="num5"/>
+                <button onclick="media()">Calcule</button>
+                <span id="mediaResult"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Exercício 3</h2>
+                <h4>Em época de pouco dinheiro, os comerciantes estão procurando aumentar suas vendas oferecendo desconto. Faça um algoritmo que possa receber um valor de um produto e escreva o valor tendo em vista que o desconto foi de 9%.</h4>
+                <span>Calcule o preço com desconto de 9%</span>
+                <input type="text" id="num6"/>
+                <button onclick="desconto()">Calcule</button>
+                <span id="descontoResult"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Exercício 4</h2>
+                <h4>Faça o algoritmo que calcule o valor em Reais correspondente aos dólares que um turista possui no cofre do hotel. Deve-se informar os seguintes dados: quantidade de dólares guardados no cofre e a cotação do dólar do dia.</h4>
+                <span>Dinheiro no Cofre</span>
+                <input type="text" id="num7"/>
+                <span>Cotação do Dolar</span>
+                <input type="text" id="num8"/>
+                <button onclick="dolares()">Converta</button>
+                <span id="valorResult"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Exercício 5</h2>
+                <h4>A Loja Mamão com Açúcar está vendendo seus produtos em 5 prestações sem juros. Faça um algoritmo que receba um valor de uma compra e mostre o valor das prestações</h4>
+                <span>Escreva o valor:</span>
+                <input type="text" id="num9"/>
+                <button onclick="mamao()">Calcule</button>
+                <span id="mamaoResult"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Exercício 6</h2>
+                <h4>Elabore um algoritmo que leia o tamanho do lado de um quadrado e informe a área e o perímetro do quadrado.</h4>
+                <span>Escreva o lado do quadrado:</span>
+                <input type="text" id="num10"/>
+                <button onclick="quadrado()">Calcule</button>
+                <span id="quadradoResult"></span>
+            </td>
+        </tr>
 
-    <h2>Exercicio 3</h2>
-    <h4>Em época de pouco dinheiro, os comerciantes estão procurando aumentar suas vendas oferecendo desconto. Faça um algoritmo que possa receber um valor de um produto e escreva o valor tendo em vista que o desconto foi de 9%.</h4>
-    <span>Calcule o preço com desconto de 9%</span>
-    <input type="text" id="num6"/>
-    <button onclick="desconto()">Calcule</button>
-    <span id="descontoResult"></span>
-    <br><br><br>
+        <tr>
+            <td>
+                <h1>Exercícios de Fixação - Condicionais</h1>
+                <h2>Exercício 7</h2>
+                <h4>Escreva um algoritmo que leia um número e o imprima caso ele seja maior que 20.</h4>
+                <span>Escreva o lado do quadrado:</span>
+                <input type="text" id="num11"/>
+                <button onclick="maior20()">Imprima</button>
+                <span id="imprimaResult"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Exercício 8</h2>
+                <h4>Escreva um algoritmo para determinar e escrever se um dado número N (recebido através do teclado) é POSITIVO, NEGATIVO ou NULO.</h4>
+                <span>Qual é o número?</span>
+                <input type="text" id="num12"/>
+                <button onclick="numRecebe()">Resultado</button>
+                <span id="numRecebeResult"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Exercício 9</h2>
+                <h4>Construir um algoritmo que leia dois números e efetue a adição. Caso o valor
+                    somado seja maior que 20, este deverá ter +8; caso o valor
+                    somado seja menor ou igual a 20, este deverá ter -5.</h4>
+                <span>Digite 2 números</span>
+                <input type="text" id="num13"/>
+                <input type="text" id="num14"/>
+                <button onclick="ex9()">Calcule</button>
+                <span id="ex9Result"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Exercício 10</h2>
+                <h4>Escreva um algoritmo que receba um número e imprima uma das mensagens:
+                    “é múltiplo de 3 e de 5” ou “é múltiplo de 3 apenas” ou “é múltiplo de 5 apenas” ou “não é múltiplo de 3 nem de 5”.</h4>
+                <span>Digite 1 número</span>
+                <input type="text" id="num15"/>
+                <button onclick="ex10()">Resultado</button>
+                <span id="ex10Result"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Exercício 11</h2>
+                <h4>Escreva um algoritmo para determinar se um número A é divisível por um
+                    outro número B. Esses valores devem ser fornecidos pelo usuário.</h4>
+                <span>Digite 2 números</span>
+                <input type="text" id="num16"/>
+                <input type="text" id="num17"/>
+                <button onclick="ex11()">Calcule</button>
+                <span id="ex11Result"></span>
+            </td>
+        </tr>
 
-    <h2>Exercicio 4</h2>
-    <h4>Faça o algoritmo que calcule o valor em Reais correspondente aos dólares que um turista possui no cofre do hotel. Deve-se informar os seguintes dados: quantidade de dólares guardados no cofre e a cotação do dólar do dia.</h4>
-    <span>Dinheiro no Cofre</span>
-    <input type="text" id="num7"/>
-    <span>Cotação do Dolar</span>
-    <input type="text" id="num8"/>
-    <button onclick="dolares()">Converta</button>
-    <span id="valorResult"></span>
-    <br><br><br>
-
+    </div></div>
+    </tbody>
+    </table>
     <script src="lista.js"></script>
 </body> 
 </html> 
